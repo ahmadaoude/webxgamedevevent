@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WEB x GAME Dev Portfolio</title>
+
+    <!-- Google Font for stylish headers -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: #333;
+      }
+
+      header {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        color: black;
+        padding: 100px 20px;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: inherit;
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+        transition: opacity 1.2s ease;
+        z-index: 0;
+      }
+
+      header:hover::before {
+        opacity: 0.3;
+      }
+
+      header h1 {
+        position: relative;
+        z-index: 1;
+        font-family: "Poppins", sans-serif;
+        font-size: 36px;
+        transition: font-size 1.2s ease, transform 1.2s ease;
+      }
+
+      header h1:hover {
+        font-size: 48px;
+        transform: scale(1.1);
+      }
+
+      .section {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .section h2 {
+        color: #0b1b2d;
+        font-family: "Poppins", sans-serif;
+      }
+
+      #skills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .skill-box {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgb(59, 59, 59);
+        width: 150px;
+        transition: 0.2s all ease;
+      }
+
+      .skill-box:hover {
+        transform: scale(1.2);
+      }
+
+      .edu-list {
+        padding: 10px;
+      }
+
+      .stage {
+        margin-bottom: 20px;
+        border-left: 2px solid #0b1b2d;
+        padding-left: 10px;
+      }
+
+      .activities {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      .activity {
+        background-color: white;
+        box-shadow: 0 0 10px rgb(59, 59, 59);
+        padding: 5px;
+        border-radius: 8px;
+        width: 20%;
+        text-align: center;
+        margin: 10px;
+      }
+
+      .activity h3 {
+        color: #0b1b2d;
+        font-size: 20px;
+      }
+
+      .activity p {
+        color: black;
+        font-size: 15px;
+        margin-top: 5px;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 50px;
+      }
+
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 👇 Change your name here -->
+    <header>
+      <h1>Enter your name here!</h1>
+    </header>
+
+    <!-- 👇 About you: write a short personal intro -->
+    <div class="section">
+      <h2>About Me!</h2>
+      <p>
+        Customize this about section! Talk about your skills, hobbies, and what
+        you are passionate about!
+      </p>
+    </div>
+
+    <!-- 👇 Add your university info here -->
+    <div class="section">
+      <h2>Education</h2>
+      <div class="edu-list">
+        <div class="stage">
+          <p><strong>University - Major</strong></p>
+          <!-- Example: American University of Sharjah - Computer Engineering -->
+          <p><em>Expected Graduation Date</em></p>
+          <!-- Example: May 2026 -->
+          <p>Description of choice</p>
+          <!-- Example: Why you chose this major, GPA etc. -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 👇 Add your past work experience here -->
+    <div class="section">
+      <h2>Experience</h2>
+      <div class="edu-list">
+        <div class="stage">
+          <p><strong>20xx</strong> - Company - Experience Title</p>
+          <p>Short description</p>
+        </div>
+
+        <div class="stage">
+          <p><strong>202xx</strong> - Company - Experience Title</p>
+          <p>Short description</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 👇 Add clubs, hackathons, personal projects etc. -->
+    <div class="section">
+      <h2>Activities & Projects</h2>
+      <div class="activities">
+        <!-- Activity 1 -->
+        <div class="activity">
+          <h3>Activity title</h3>
+          <!-- Example: Game Dev Club -->
+          <p><strong>Activity Role</strong></p>
+          <!-- Example: Treasurer -->
+          <p>Description</p>
+        </div>
+
+        <!-- Activity 2 -->
+        <div class="activity">
+          <h3>Activity title</h3>
+          <p><strong>Activity Role</strong></p>
+          <p>Description</p>
+        </div>
+
+        <!-- Activity 3 -->
+        <div class="activity">
+          <h3>Activity title</h3>
+          <p><strong>Activity Role</strong></p>
+          <p>Description</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 👇 Showcase your technical or soft skills -->
+    <div class="section">
+      <h2>Skills</h2>
+      <div id="skills">
+        <div class="skill-box">Communication</div>
+        <div class="skill-box">Leadership</div>
+        <div class="skill-box">Add your skills here</div>
+        <div class="skill-box">
+          You can add more divs to showcase more skills!
+        </div>
+        <div class="skill-box">Add your skills here</div>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <!-- 👇 Footer, you can leave a message or contact info here -->
+    <footer>
+      <p>End of page :)</p>
+      <!-- Example: contact me at exampleemail@gmail.com -->
+    </footer>
+  </body>
+</html>
